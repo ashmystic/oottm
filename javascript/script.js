@@ -18,6 +18,8 @@ $(function() {
     var angle = theta * selectedIndex * -1;
     carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
       rotateFn + '(' + angle + 'deg)';
+    carousel.style.webkitTransform = 'translateZ(' + -radius + 'px) ' + 
+      rotateFn + '(' + angle + 'deg)';
   }
 
 /*
@@ -91,6 +93,7 @@ $(function() {
         cell.style.opacity = 1;
         var cellAngle = theta * i;
         cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
+        cell.style.webkitTransform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
       } else {
         // hidden cell
         cell.style.opacity = 0;

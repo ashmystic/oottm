@@ -56,10 +56,10 @@ h1,h2 {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 
-  -webkit-transition: transform 1s;
-  -moz-transition: transform 1s;
-  -o-transition: transform 1s;
-  -ms-transition: transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  -ms-transition: -ms-transform 1s;
   transition: transform 1s;
 }
 
@@ -76,10 +76,10 @@ h1,h2 {
   color: white;
   text-align: center;
 
-  -webkit-transition: transform 1s, opacity 1s;
-  -moz-transition: transform 1s, opacity 1s;
-  -o-transition: transform 1s, opacity 1s;
-  -ms-transition: transform 1s, opacity 1s;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  -moz-transition: -moz-transform 1s, opacity 1s;
+  -o-transition: -o-transform 1s, opacity 1s;
+  -ms-transition: -ms-transform 1s, opacity 1s;
   transition: transform 1s, opacity 1s;
 
   /*overflow: hidden;*/
@@ -186,16 +186,16 @@ h1,h2 {
   height: 100%;
   position: relative;
 
-  -webkit-transition: transform 1s;
-  -moz-transition: transform 1s;
-  -o-transition: transform 1s;
-  -ms-transition: transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  -ms-transition: -ms-transform 1s;
   transition: transform 1s;
 
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: -webkit-preserve-3d;
+  -moz-transform-style: -moz-preserve-3d;
+  -o-transform-style: -o-preserve-3d;
+  -ms-transform-style: -ms-preserve-3d;
   transform-style: preserve-3d;
 }
 
