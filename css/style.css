@@ -61,6 +61,12 @@ h1,h2 {
   -o-transition: -o-transform 1s;
   -ms-transition: -ms-transform 1s;
   transition: transform 1s;*/
+
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .carousel__cell {
