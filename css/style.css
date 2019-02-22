@@ -204,12 +204,20 @@ h1,h2 {
   top:0px;
   height: 100%;
   width: 100%;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .card__face--front {
   /*background: red;*/
-    backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 .card__face--back {
@@ -251,6 +259,7 @@ h1,h2 {
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+  
   cursor:pointer;
 }
 
