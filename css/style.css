@@ -186,6 +186,7 @@ h1,h2 {
   height: 100%;
   position: relative;
 
+  -webkit-transform: translateZ(0);
   -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
@@ -225,6 +226,7 @@ h1,h2 {
 .card__face--back {
   position: absolute;
   /*background: blue;*/
+  -webkit-transform: translateZ(0);
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
@@ -236,6 +238,7 @@ h1,h2 {
 
 .card.is-flipped {
 
+  -webkit-transform: translateZ(0);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
