@@ -62,35 +62,6 @@ h1,h2 {
   -o-transition: -o-transform 1s;
   -ms-transition: -ms-transform 1s;
   transition: transform 1s;
-
-/*  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -ms-transition: all 1s;
-  transition: all 1s;*/
-
-/*  -webkit-transition-property: transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: transform;
-  -moz-transition-duration: 1s;
-  -o-transition-property: transform;
-  -o-transition-duration: 1s;
-  -ms-transition-property: transform;
-  -ms-transition-duration: 1s;
-  transition-property: transform;
-  transition-duration: 1s;*/
-
-/*  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;*/
-
-/*  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s;*/
 }
 
 .carousel__cell {
@@ -112,10 +83,6 @@ h1,h2 {
   -ms-transition: -ms-transform 1s, opacity 1s;
   transition: transform 1s, opacity 1s;
 
-  /*overflow: hidden;*/
-
-  /*backface-visibility: hidden;*/
-  /*transform-origin: center right;*/
 
   perspective: 600px;
 }
@@ -123,7 +90,7 @@ h1,h2 {
   text-align: center;
   position: relative;
   margin-top: 210px;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
 
   font-family: 'Inknut Antiqua', serif;
 
@@ -167,7 +134,7 @@ h1,h2 {
   text-align: center;
   position: relative;
   margin-top: 110px;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
   font-family: 'Inknut Antiqua', serif;
 
   -webkit-z-index: 2;
@@ -319,7 +286,6 @@ h1,h2 {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
-
 
 }
 .carousel__cell:hover img {
