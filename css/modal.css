@@ -37,8 +37,19 @@
     width: 90%;
      overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
+
+    -moz-animation-name: animatetop;
+    -moz-animation-duration: 0.4s;
+
+    -o-animation-name: animatetop;
+    -o-animation-duration: 0.4s;
+
+    -ms-animation-name: animatetop;
+    -ms-animation-duration: 0.4s;
+
     animation-name: animatetop;
     animation-duration: 0.4s
 }
@@ -154,9 +165,12 @@
 /* Responsive bit*/
 @media only screen and (max-width: 600px) {
 .modal-body-content {
-    column-count: 1;
     -moz-column-count: 1;
     -webkit-column-count: 1;
+    -o-column-count: 1;
+    -ms-column-count: 1;
+    column-count: 1;
+    
     width: 100%;
 }
 }
