@@ -1,18 +1,34 @@
 $(function() {
 
-  var carousel = document.querySelector('.carousel');
-  var cells = carousel.querySelectorAll('.carousel__cell');
+  var carousel,
+      cells,
+      cellWidth,
+      cellHeight,
+      radius,
+      theta;
   var cellCount = 7;
   var selectedIndex = 0;
-  var cellWidth = carousel.offsetWidth;
-  var cellHeight = carousel.offsetHeight;
   var isHorizontal = true;
   var scope = 'Stages';
   var rotateFn = 'rotateY';
-  var radius, theta;
   // console.log( cellWidth, cellHeight );
   var startX, startY;
   var deltaX, deltaY;
+
+  var initVars = function() {
+    carousel = document.querySelector('.carousel');
+    cells = carousel.querySelectorAll('.carousel__cell');
+    cellWidth = carousel.offsetWidth;
+    cellHeight = carousel.offsetHeight;
+
+    changeCarousel();
+}
+
+initVars();
+
+$(window).resize(function() {
+    initVars();
+  });
 
   function rotateCarousel() {
     var angle = theta * selectedIndex * -1;
@@ -98,6 +114,7 @@ $(function() {
         // hidden cell
         cell.style.opacity = 0;
         cell.style.transform = 'none';
+        cell.style.webkitTransform = 'none';
       }
     }
 
@@ -105,7 +122,8 @@ $(function() {
   }
 
   // set initials
-  changeCarousel();
+//  changeCarousel();
+
 
   /*
   Buttons
@@ -164,7 +182,7 @@ $(function() {
       });
 
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      window.onclick = window.ontouchstart = function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }

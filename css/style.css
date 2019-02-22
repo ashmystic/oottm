@@ -89,36 +89,63 @@ h1,h2 {
 
   perspective: 600px;
 }
-
-@media only screen and (max-width: 600px) {
-/*.scene {
-  margin: 40px 0;
+.scope-text {
+  text-align: center;
   position: relative;
-  width: 180px;
-  height: 140px;
-  margin: 80px auto;
-  perspective: 1000px;
+  margin-top: 210px;
+  margin-bottom: -30px;
+
+  font-family: 'Inknut Antiqua', serif;
+
+  -webkit-z-index: 2;
+  -moz-z-index: 2;
+  -o-z-index: 2;
+  -ms-z-index: 2;
+  z-index: 2;
 }
 
-.carousel__cell {
-  position: absolute;
-  height: 300px;
-  left: 10px;
-  top: 10px;
-  line-height: 116px;
-  font-size: 80px;
-  font-weight: bold;
-  color: white;
+@media only screen and (max-width: 600px) {
+  .scene {
+    margin: 40px 0;
+    position: relative;
+    width: 150px;
+    height: 140px;
+    margin: 80px auto;
+    perspective: 1000px;
+  }
+
+  .carousel__cell {
+    position: absolute;
+    height: 250px;
+    left: 10px;
+    top: 10px;
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    -webkit-transition: transform 1s, opacity 1s;
+    -moz-transition: transform 1s, opacity 1s;
+    -o-transition: transform 1s, opacity 1s;
+    -ms-transition: transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s;
+
+    perspective: 600px;
+  }
+  .scope-text {
   text-align: center;
+  position: relative;
+  margin-top: 110px;
+  margin-bottom: -30px;
+  font-family: 'Inknut Antiqua', serif;
 
-  -webkit-transition: transform 1s, opacity 1s;
-  -moz-transition: transform 1s, opacity 1s;
-  -o-transition: transform 1s, opacity 1s;
-  -ms-transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s;
-
-  perspective: 600px;
-}*/
+  -webkit-z-index: 2;
+  -moz-z-index: 2;
+  -o-z-index: 2;
+  -ms-z-index: 2;
+  z-index: 2;
+}
 }
 
 /*.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
@@ -269,22 +296,10 @@ h1,h2 {
   cursor:pointer;
 }
 
-.scope-text {
-  text-align: center;
-  position: relative;
-  margin-top: 210px;
-  font-family: 'Inknut Antiqua', serif;
-
-  -webkit-z-index: 2;
-  -moz-z-index: 2;
-  -o-z-index: 2;
-  -ms-z-index: 2;
-  z-index: 2;
-}
-
 .carousel-options {
   text-align: center;
   position: relative;
+
 
   -webkit-z-index: 2;
   -moz-z-index: 2;
