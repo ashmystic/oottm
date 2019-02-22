@@ -243,6 +243,7 @@ h1,h2 {
 }
 
 .card__face--front {
+  display: inline-block;
   /*background: red;*/
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -252,6 +253,7 @@ h1,h2 {
 }
 
 .card__face--back {
+  display: inline-block;
   position: absolute;
   /*background: blue;*/
   -webkit-transform: translateZ(0);
@@ -265,6 +267,7 @@ h1,h2 {
 }
 
 .card.is-flipped {
+  display: inline-block;
 
   -webkit-transform: translateZ(0);
   -webkit-transform: rotateY(180deg);
