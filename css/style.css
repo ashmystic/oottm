@@ -56,11 +56,11 @@ h1,h2 {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 
-  -webkit-transition: -webkit-transform 1s;
+/*  -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
   -ms-transition: -ms-transform 1s;
-  transition: transform 1s;
+  transition: transform 1s;*/
 }
 
 .carousel__cell {

@@ -21,6 +21,9 @@ $(function() {
     cellWidth = carousel.offsetWidth;
     cellHeight = carousel.offsetHeight;
 
+    carousel.style.transition = 'transform 1s';
+    carousel.style.webkitTransition = 'transform 1s';
+
     changeCarousel();
 }
 
