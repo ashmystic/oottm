@@ -21,8 +21,10 @@ $(function() {
     cellWidth = carousel.offsetWidth;
     cellHeight = carousel.offsetHeight;
 
- //   carousel.style.transition = 'transform 1s';
-  //  carousel.style.webkitTransition = 'transform 1s';
+    carousel.style.transition = 'transform 1s';
+ //   carousel.style.transform = 'transition 1s';
+    carousel.style.webkitTransition = '-webkit-transform 1s';
+  //  carousel.style.webkitTransform = 'transition 1s';
 
     changeCarousel();
 }
