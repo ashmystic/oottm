@@ -248,6 +248,7 @@ h1,h2 {
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .card__face--back {
@@ -285,6 +286,8 @@ h1,h2 {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+
+
 }
 .carousel__cell:hover img {
   -moz-transform: scale(1.05);
