@@ -56,17 +56,18 @@ h1,h2 {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 
-/*  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
   -ms-transition: -ms-transform 1s;
-  transition: transform 1s;*/
+  transition: transform 1s;
 
-  -webkit-transition: all 1s;
+/*  -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -ms-transition: all 1s;
-  transition: all 1s;
+  transition: all 1s;*/
 
 /*  -webkit-transition-property: transform;
   -webkit-transition-duration: 1s;
