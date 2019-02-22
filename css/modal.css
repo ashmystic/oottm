@@ -1,0 +1,186 @@
+/* MODAL */
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #E9EBEE;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0;
+ //   border: 1px solid #888;
+    width: 90%;
+     overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-image {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    width: 125px;
+    
+}
+.modal-title {
+    display: inline-block;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    /* float: right; */
+    font-size: 32px;
+    font-weight: bold;
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 16px 16px;
+    color: white;
+    background-color: DarkSlateGrey;
+}
+.modal-header h1 {
+    color: white;
+}
+
+/* EXTERNAL */
+#modal-birth .modal-header,
+#modal-birth .modal-footer {
+    background-image: url("../images/textures/soft-circle-scales.png");
+}
+#modal-growth .modal-header,
+#modal-growth .modal-footer {
+    background-image: url("../images/textures/washi.png");
+}
+#modal-relationships .modal-header,
+#modal-relationships .modal-footer {
+    background-image: url("../images/textures/connected.png");
+}
+#modal-aging .modal-header,
+#modal-aging .modal-footer {
+    background-image: url("../images/textures/norwegian-rose.png");
+}
+#modal-loss .modal-header,
+#modal-loss .modal-footer {
+    background-image: url("../images/textures/shattered.png");
+}
+#modal-death .modal-header,
+#modal-death .modal-footer {
+    background-image: url("../images/textures/skulls.png");
+}
+#modal-tree .modal-header,
+#modal-tree .modal-footer {
+    background-image: url("../images/textures/wood-pattern.png");
+}
+/* INTERNAL */
+#modal-presence .modal-header,
+#modal-presence .modal-footer {
+    background-image: url("../images/textures/swirl.png");
+}
+#modal-gratitude .modal-header,
+#modal-gratitude .modal-footer {
+    background-image: url("../images/textures/flowers.png");
+}
+#modal-synchronicity .modal-header,
+#modal-synchronicity .modal-footer {
+    background-image: url("../images/textures/psychedelic.png");
+}
+#modal-gnosis .modal-header,
+#modal-gnosis .modal-footer {
+    background-image: url("../images/textures/maze-white.png");
+}
+#modal-meta-gnosis .modal-header,
+#modal-meta-gnosis .modal-footer {
+    background-image: url("../images/textures/light-wool.png");
+}
+#modal-rapture .modal-header,
+#modal-rapture .modal-footer {
+    background-image: url("../images/textures/black-thread-light.png");
+}
+#modal-spirit .modal-header,
+#modal-spirit .modal-footer {
+    background-image: url("../images/textures/dimension.png");
+}
+
+.modal-body {
+    padding: 16px 16px;
+}
+
+.modal-body-content {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    width: 100%;
+}
+/* Responsive bit*/
+@media only screen and (max-width: 600px) {
+.modal-body-content {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    width: 100%;
+}
+}
+
+.column {
+    padding: 12px 12px 0;
+    background-color: #FFFFFF;
+}
+
+.modal-body-content-section {
+    /* background: red; */
+    /*-webkit-column-break-inside: avoid;
+    -moz-column-break-inside:avoid;
+    -moz-page-break-inside:avoid;
+    page-break-inside: avoid;*/
+    display: inline-block;
+     /* height: 100px;  */
+     margin-bottom: 20px;
+    width: 100%;
+}
+
+.modal-footer {
+    padding: 16px;
+    vertical-align: text-middle;
+    background-color: DarkSlateGrey;
+    color: white;
+}
