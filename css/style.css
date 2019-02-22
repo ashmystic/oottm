@@ -205,6 +205,8 @@ h1,h2 {
   height: 100%;
   width: 100%;
 
+  display: inline-block;
+
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
@@ -233,6 +235,7 @@ h1,h2 {
 }
 
 .card.is-flipped {
+
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
@@ -259,21 +262,31 @@ h1,h2 {
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  
+
   cursor:pointer;
 }
 
 .scope-text {
   text-align: center;
   position: relative;
-  z-index: 2;
   margin-top: 210px;
   font-family: 'Inknut Antiqua', serif;
+
+  -webkit-z-index: 2;
+  -moz-z-index: 2;
+  -o-z-index: 2;
+  -ms-z-index: 2;
+  z-index: 2;
 }
 
 .carousel-options {
   text-align: center;
   position: relative;
+
+  -webkit-z-index: 2;
+  -moz-z-index: 2;
+  -o-z-index: 2;
+  -ms-z-index: 2;
   z-index: 2;
 }
 
