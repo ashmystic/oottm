@@ -89,8 +89,8 @@ h1,h2 {
 .scope-text {
   text-align: center;
   position: relative;
-  margin-top: 210px;
-  margin-bottom: -20px;
+  margin-top: 100px;
+  margin-bottom: -90px;
 
   font-family: 'Inknut Antiqua', serif;
 
@@ -100,6 +100,18 @@ h1,h2 {
   -ms-z-index: 2;
   z-index: 2;
 }
+.carousel-options {
+  text-align: center;
+  position: relative;
+  margin-top: 210px;
+
+  -webkit-z-index: 2;
+  -moz-z-index: 2;
+  -o-z-index: 2;
+  -ms-z-index: 2;
+  z-index: 2;
+}
+
 
 @media only screen and (max-width: 600px) {
   .scene {
@@ -130,12 +142,10 @@ h1,h2 {
 
     perspective: 600px;
   }
-  .scope-text {
+  .carousel-options {
   text-align: center;
   position: relative;
   margin-top: 110px;
-  margin-bottom: -20px;
-  font-family: 'Inknut Antiqua', serif;
 
   -webkit-z-index: 2;
   -moz-z-index: 2;
@@ -143,6 +153,7 @@ h1,h2 {
   -ms-z-index: 2;
   z-index: 2;
 }
+
 }
 
 /*.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.8); }
@@ -276,7 +287,6 @@ h1,h2 {
 }
 
 .carousel__cell img {
-  height: 100%;
   max-width: 100%;
   /*margin-top: 20px;*/
   /*margin-bottom: 10px;*/
@@ -303,18 +313,5 @@ h1,h2 {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-.carousel-options {
-  text-align: center;
-  position: relative;
-
-
-  -webkit-z-index: 2;
-  -moz-z-index: 2;
-  -o-z-index: 2;
-  -ms-z-index: 2;
-  z-index: 2;
-}
-
 
 
